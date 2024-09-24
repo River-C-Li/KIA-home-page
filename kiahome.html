@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kia home</title>
+    <link rel="stylesheet" href="./kiacss.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<style>
+  
+.threescreen {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 15px;
+gap:5px;
+    background-color: rgb(0, 0, 0);
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+  justify-content: end;
+    height: 600px;
+    align-items: center;
+    padding-bottom: 15px;
+    background-color: rgb(39, 39, 39);
+    width: 30%;
+    min-width: 400px;
+}
+
+.screen:hover{
+    width:34%; height: 680px;
+    transition-duration: 1s;
+}
+.screen:not(:hover){
+    width:30%;  height: 600px;
+    transition-duration: 1s;
+}
+
+
+/* .secondmainone:hover,
+.secondmaintwo:hover {
+    background-color: rgb(35, 35, 80);
+} */
+
+.dotsingle {
+    width: 160px;
+    height: 50px;
+    border: 1px solid rgb(240, 240, 240);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.clickbutton {
+    margin-top:8px; padding:4px 10px 10px 7px;
+}
+
+.dotsingle:hover {
+    background-color: rgb(214, 214, 214);
+}
+.clickbutton:hover {
+    color: rgb(28, 28, 60);
+}
+</style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="navleft">
+          <div id="logo">
+            <a href="./kiahome.html">
+              <img src="./img/kia_logo_white.svg" alt="triangle with all three sides equal" height="50px"
+                width="auto" /></a>
+          </div>
+          <div class="subnav">
+            <button class="subnavbtn">Vehicles</button>
+            <ul class="subnav-content">
+              <li class="subnavcar" href="#...">
+                <h6>KIA EV9</h6>
+                <img src="./img/kia_homepage_navigation_large-desktop_2025-carnival-hev_hover.png" height="120px" ; width="auto">
+              </li>
+              <li class="subnavcar" href="#...">
+                <h6>SPORTAGE HYBRID</h6>
+                <img src="./img/kia_homepage_navigation_large-desktop_carnival-ice_hover.png" height="120px" ; width="auto">
+              </li>
+              <li class="subnavcar" href="#...">
+                <h6>SOUL</h6>
+                <img src="./img/kia_homepage_navigation_large-desktop_EV6-profile.png" height="120px" ; width="auto">
+              </li>
+              <li class="subnavcar" href="#..." style="border-right:none">
+                <h6>SPORTAGE HYBRID</h6>
+                <img src="./img/kia_homepage_navigation_large-desktop_seltos-2024-profile.png" height="120px" ; width="auto">
+              </li>
+              <li class="subnavcar" href="#..." >
+                <h6>SOUL</h6>
+                <img src="./img/kia_homepage_navigation_large-desktop_sportage-hev-2024-profile.png" height="120px" ; width="auto">
+              </li>
+              <li class="subnavcar" href="#...">
+                <h6>SPORTAGE HYBRID</h6>
+                <img src="./img/kia_homepage_navigation_large-desktop_sportage-hev-2024-profile.png" height="120px" ; width="auto">
+              </li>
+              <li class="subnavcar" href="#..." >
+                <h6>SOUL</h6>
+                <img src="./img/kia_homepage_navigation_large-desktop_sportage-hev-2024-profile.png" height="120px" ; width="auto">
+              </li>
+               
+            </ul>
+          </div>
+          <div class="subnav">
+            <button class="subnavbtn">Inventory</button>
+            <ul class="subnav-content">
+              <li class="subnavcar" href="#...">KIA EV9 </li>
+              <li class="subnavcar" href="#..."> SPORTAGE HYBRID</li>
+              <li class="subnavcar" href="#...">SOUL</li>
+              <li class="subnavcar" href="#..." style="border-right:none">KIA EV9 </li>
+              <li class="subnavcar" href="#..."> SPORTAGE HYBRID</li>
+              <li class="subnavcar" href="#...">SOUL</li>
+            </ul>
+          </div>
+          <div class="subnav">
+            <button class="subnavbtn">Owners</button>
+            <ul class="subnav-content">
+              <li class="subnavcar" href="#...">Owner Fourm</li>
+              <li class="subnavcar" href="#...">After Sell Service</li>
+              <li class="subnavcar" href="#...">kIA Culture</li>
+              <li class="subnavcar" href="#..." style="border-right:none">Owner Fourm</li>
+              <li class="subnavcar" href="#...">After Sell Service</li>
+              <li class="subnavcar" href="#...">kIA Culture</li>
+            </ul>
+          </div>
+    
+        </div>
+        <div class="navright">
+          <div class="subnavbtn">
+            <img src="./img/map pin-white.png" width="18px" height="18px">Find a Dealer</div>
+          <form>       
+             <label class="subnavbtn" for="cardata">Find New Car</label>
+             
+             <!-- <input id="cardata" type="text" > -->
+              <select name="carchoice" id="carchoice">
+                <option class="carname" value="KIA EV9" >KIA EV9</option>
+                <option  class="carname" value="SPORTAGE" >SPORTAGE</option>
+                <option  class="carname" value="SOUL" >SOUL</option>
+                <option  class="carname" value="CARNIVA" > CARNIVAL</option>  
+              </select>
+              <!-- <button class="searchsubmit" type="submit" ><img src="./img/search-icon.png" width="20px" height="20px"> </button>           -->
+             <!-- <input class="search" type="text" placeholder="Search" aria-label="Search"> -->
+            </form>
+        </div>
+      </nav>
+
+    <header>
+        <figure class="iframe" style="background-color:black">
+            <iframe src="./img/KIA_EV9_2024_v2.mp4"  frameborder="0" width="100%" height="700px"type="video/mp4" autoplay  loop ></iframe>
+        </figure>
+    </header>
+    <main class="allmain">
+        <section class="threescreen">
+            <div class="screen" id="ev9">
+                <div>
+                    <p><span class="heading" style="font-size:38px">All-new Kia EV9</span><br>
+                        <span style="font-size:18px">SUV CAPABILITY. EV POWER</span>
+                    </p>
+                </div>
+                    <div class="dotsingle">
+                        <P class="clickbutton">Meet EV9</p>
+                    </div>
+                
+            </div>
+            <div class="screen" id="Sportage">
+                <div>
+                    <p><span class="heading" style="font-size:38px">
+                        2025 Sportage Hybrid</span><br>
+                        <span style="font-size:18px">MILES OF POSSIBILITIES</span>
+                    </p>
+                </div>
+                
+                    <div class="dotsingle" style="width:200px">
+                        <P class="clickbutton">Meet Sportage Hybrid</p>
+                    </div>
+               
+            </div>
+            <div class="screen" id="telluride">
+                <div>
+                    <p><span class="heading" style="font-size:38px">
+                        2024 Telluride</span><br>
+                        <span style="font-size:18px">RUGGED & REFINED</span>
+                    </p>
+                </div>
+                
+                    <div class="dotsingle">
+                        <P class="clickbutton">Meet Telluride</p>
+                    </div>
+               
+            </div>
+        </section>
+
+        <section class="carouselbootstrap" style="height: auto; width:100%; 
+        background-image: linear-gradient(to top, rgb(241, 242, 252) 41%, rgb(44, 73, 113), rgb(6, 6, 9));">
+       
+        <!-- /* radial-gradient(rgb(241, 242, 252) 38%, rgb(44, 73, 113), rgb(6, 6, 9), rgb(0, 0, 0) */ -->
+       
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img id="bigcar" src="./img/desktop.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h1 class="carouselheading">All-new Kia EV9</h1>
+                      <p  class="carouselp">Some representative <br>placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img id="bigcar" src="./img/desktop (1).png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h1 class="carouselheading">2025 Sportage Hybrid</h1>
+                      <p class="carouselp">Some representative placeholder content <br>for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img  id="bigcar" src="./img/desktop (2).png" class="d-block w-100" alt="...">
+                    <div  class="carousel-caption d-none d-md-block">
+                      <h1 class="carouselheading">2024 Telluride</h1>
+                      <p class="carouselp">Some representative <br>placeholdercontent for the third slide.</p>
+                    </div>
+                  </div>
+            
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+        <div id="biggap" style="background-color: rgb(241, 242, 252) ;">
+        </div>
+        <section class="service">
+            <div class="secondmain">
+                <div class="leftsecondmain">
+                    
+                        <p>THE KIA DIFFERENCE WITH<br>Engineered With Power</p>
+                        <div class="dotsingle">
+                            <P  class="clickbutton">Why KIA ?</p>
+                        </div>              
+                </div>
+                <div class="rightsecondmain">
+                    <div class="rightsecond" style="background: rgb(206, 205, 205)">
+                        <div class="svgservice">
+                            <img src="./img/connectivity-icon-hover-v4.gif"  style="height:70px"/>
+                        </div>
+                            <p class="boxtext">Find a Dealer</p>
+                        
+                    </div>
+                    <div class="rightsecond" style="background:rgb(220, 220, 220) 
+                     ">
+                        <div class="svgservice">
+                            <img src="./img/alt-fuel_icon.gif"  style="height:70px"/>
+                        </div>
+                            <p class="boxtext">Offers and <br>Incentives</p>
+                        
+                    </div>
+                    <div class="rightsecond" style="background: rgb(220, 220, 220)">
+                        <div class="svgservice" >
+                            <img src="./img/connectivity-icon-hover-v4.gif"  style="height:70px"/>
+                        </div>
+                            <p class="boxtext">Get a Local<br> Price</p>
+                        
+                    </div>
+                    <div class="rightsecond" style="background: rgb(206, 205, 205)">
+                        <div class="svgservice">
+                            <img src="./img/keep-you-safe_icon.gif" style="height:70px;"/>
+                        </div>
+                            <p class="boxtext">Certified <br>Pre-OwnedApr</p>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="threescreen tech">
+            <div class="screen">
+                <div class="svgservice">
+                    <img src="./img/alt-fuel_icon.gif" style="height:70px;"/>
+                </div>
+                <div>
+                    <p><span class="heading" style="font-size:38px">EV, hybrid, and beyond
+                        </span><br>
+                        <span style="font-size:18px; line-height:0.9;">Discover which Kia electric, 
+                            hybrid, or plug-in <br>hybrid vehicle is right for you.</span>
+                    </p>
+                </div>
+                
+                    <div class="dotsingle">
+                        <P class="clickbutton">Exploer Features</p>
+                    </div>
+                
+            </div>
+            <div class="screen">
+                <div class="svgservice">
+                    <img src="./img/connectivity-icon-hover-v4.gif" style="height:70px;"/>
+                </div>
+                <div>
+                    <p><span class="heading" style="font-size:38px">Kia Connect
+                       </span><br>
+                        <span style="font-size:18px; line-height:0.9;"> Use Kia Access for vehicle
+                            connectivity,boosting <br> security,convenience, and comfort.</span>
+                    </p>
+                </div>
+               
+                    <div class="dotsingle">
+                        <P class="clickbutton">Exploer Features</p>
+                    </div>
+                
+            </div>
+            <div class="screen">
+                <div class="svgservice">
+                    <img src="./img/keep-you-safe_icon.gif" style="height:70px;"/>
+                </div>
+                <div>
+                    <p><span class="heading" style="font-size:38px;">Keeping you safe
+                        </span><br>
+                        <span style="font-size:18px; line-height:0.9;" >Explore Kia’s suite of<br>advanced
+                             safety features.</span>
+                    </p>
+                </div>
+                
+                    <div class="dotsingle">
+                        <P class="clickbutton">Exploer Features</p>
+                    </div>
+              
+            </div>
+        </section>
+
+<div id="biggap">
+    <a href="./kiahome.html">
+        <img
+        src="./img/kia_logo_white.svg"
+        alt="triangle with all three sides equal"
+        height="50px"
+        width="auto" /></a>
+</div>
+        <div class="lastmain">
+           
+            <div  class="footertext">
+                <div  class="footertextdetai">Vehicles<br>
+                Certified Pre-Owned<br>
+                Why Kia heart<br>
+                Kia Collective <br>
+                Owners 
+                </div>
+            </div>
+
+            <div  class="footertext">
+                <div  class="footertextdetai">About Our Vehicles<br>
+                SUV Family<br>
+                Sedan Family<br>
+                Alternative Fuel Vehicles<br>
+                Kia Safety Technology<br>
+                Kia Connect<br>
+                Accessories<br>
+                Request a Brochure</div>
+            </div>
+
+            <div  class="footertext">
+              <div  class="footertextdetai">Corporate<br>
+                About Us<br>
+                Careers<br>
+                Kia Finance<br>
+                Investors<br>
+                Contact Us<br>
+                Recalls<br>
+                Vulnerability<br>
+                Communication Preferences</div>
+            </div>
+
+            <div  class="footertext">
+            <div  class="footertextdetai">What’s New<br>
+                Kia EasyBuy<br>
+                Concept Vehicles<br>
+                Social Impact<br>
+                Kia Media<br>
+                The Kia Instrument</div>
+            </div>
+            <div class="footertext" style="border:none" >
+               <div class="footertextdetai">
+                Kia Media<br>
+                The Kia Instrument<br>
+                Legal<br>
+                Privacy<br>
+                Terms of Service<br>
+                MPG Disclaimer<br>
+                Accessibility<br>
+                Cookies Management<br>
+                Your Privacy Choices<br>
+                Unsolicited Idea Submission Policy</div>
+            </div>
+        </div>
+        <div id="biggap">
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+
+</html
