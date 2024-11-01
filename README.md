@@ -1,4 +1,3 @@
-Title: Three pages-KIA mock
-Purpose: Perscholas software engineering SBA work.
+Title: KIA homepage
 Tools use: HTML, CSS;
 Author: River Li;
